@@ -6,8 +6,8 @@ void check(double & d)
 	while (!(std::wcin >> d))
 	{
 		std::wcin.clear();
-		std::wcin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-		while (std::wcin.get() != '\n')
+		std::wcin.ignore(std::numeric_limits<std::streamsize>::max(), L'\n');
+		while (std::wcin.get() != L'\n')
 			continue;
 		std::wcout << L"Пожалуйста, введите число: ";
 	}
@@ -18,8 +18,8 @@ void check(int & n)
 	while (!(std::wcin >> n))
 	{
 		std::wcin.clear();
-		std::wcin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-		while (std::wcin.get() != '\n')
+		std::wcin.ignore(std::numeric_limits<std::streamsize>::max(), L'\n');
+		while (std::wcin.get() != L'\n')
 			continue;
 		std::wcout << L"Пожалуйста, введите целочисленное число: ";
 	}
